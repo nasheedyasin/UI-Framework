@@ -1,0 +1,23 @@
+<br>
+<div *ngIf=" !libraryService.extractedInformation else templateDetails">
+    <ng-template #templateTiles>
+        <div>
+            <mat-grid-list cols="3" rowHeight="120px">
+                <a>
+                    <mat-grid-tile class="matTile" (click)="TestFunction(tile)" *ngFor="let tile of data">
+                        {{tile}}
+                    </mat-grid-tile>
+                </a>
+            </mat-grid-list>
+        </div>
+    </ng-template>
+
+    <div class="spinner" *ngIf="showSpinner else templateTiles">
+        <mat-spinner color="accent"></mat-spinner>
+    </div>
+</div>
+
+
+<ng-template #templateDetails>
+    <app-template-details></app-template-details>
+</ng-template>

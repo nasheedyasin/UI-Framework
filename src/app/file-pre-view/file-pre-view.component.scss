@@ -1,0 +1,29 @@
+.matButton{
+    // font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    // font-size: 14px;
+    // font-weight: bold;
+    background-color: red;
+    position: absolute;
+    // bottom: 4%;
+    right: 160px;
+  }
+  
+  .matButton:hover {
+    opacity: 0.9;
+  }
+
+  .matCard {
+    background-color: #343a40;
+  }
+
+  ::ng-deep .mat-dialog-container {
+    background-color: #343a40;
+  }
+
+  ::ng-deep #toolbarViewer {
+    background-color: #171717;
+  }
+
+  // ::ng-deep .mat-dialog-content {
+  //   overflow-y: hidden !important;
+  // }

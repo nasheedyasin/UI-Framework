@@ -1,0 +1,25 @@
+.matTile {
+    background: #343A40;
+    padding: 5px;
+    font-size: 28px;
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+}
+
+.matTile:hover {
+    background: #70C989;
+    padding: 5px;
+    font-size: 28px;
+    color:white;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+}
+
+.spinner{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

@@ -1,0 +1,121 @@
+/* mat-grid-tile {
+    background: #343A40;
+    padding: 80px;
+    font-size: 28px;
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+    align-items: flex-end;
+
+    
+  } */
+
+/* 
+  #TrainDiv {
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    padding: 80px;
+    margin: 0;
+  }
+   */
+/* .mat-grid-tile:hover {
+    background:#70C989;
+    color: white; 
+} */ 
+
+#TrainTile {
+
+    background: #343A40;
+    padding: 5px;
+    font-size: 28px;
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+
+    
+
+
+
+    background-image: url("../../assets/TrainIcon.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center; 
+}
+
+#TrainTile:hover {
+    align-content: flex-end;
+   
+    background-image: url("../../assets/TrainGIF.gif");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    background-color:  #f3bd01;
+    color:white;
+}
+
+
+#LibraryTile {
+    align-content: flex-end;
+  
+    background: #343A40;
+    padding: 5px;
+    font-size: 28px;
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+
+    background-image: url("../../assets/LibraryIcon.png");
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position: center; 
+}
+
+#LibraryTile:hover {
+    align-content: flex-end;
+    
+    background-image: url("../../assets/LibraryGIF.gif");
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position: center;
+    background-color: #1f6dc7; 
+    color:white;
+}
+
+
+#ExtractTile {
+    align-content: flex-end;
+    
+    background: #343A40;
+    padding: 5px;
+    font-size: 28px;
+    color:#8c989c;
+    font-variant-caps: all-small-caps;
+    margin-right:10px;
+
+    background-image: url("../../assets/ExtractIcon.png");
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: center; 
+}
+
+#ExtractTile:hover {
+    align-content: flex-end;
+    
+    background-image: url("../../assets/ExtractGIF.gif");
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: center;
+    background-color: #da3114;
+    color:white;
+}
+
+
