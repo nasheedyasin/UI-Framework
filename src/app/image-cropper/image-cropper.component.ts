@@ -129,7 +129,7 @@ export class ImageCropperComponent implements OnInit, AfterViewInit {
         this.formData.append("FileType",this.vendorName)
         this.imageDetailsList.forEach(element => { this.convToJPG(element); });
 
-        this.http.post<any>("http://faiblr04w13677/SIMSservice/api/upload/images", this.formData).subscribe(
+        this.http.post<any>("http://localhost:2136/api/upload/images", this.formData).subscribe(
         (data: any) => { 
             this.notification.showSuccess("Trained successfully","Invoice Template Status:");
             this.serveImages.B64Images = null;

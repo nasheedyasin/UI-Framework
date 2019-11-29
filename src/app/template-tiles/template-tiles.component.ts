@@ -31,7 +31,7 @@ export class TemplateTilesComponent implements OnInit {
     this.myJson = {
       "FileType" : fileType
     }
-    this.httpClient.post("http://172.23.114.23:5000/api/TemplateDetails ",this.myJson).subscribe(
+    this.httpClient.post("http://127.0.0.1:5000/api/TemplateDetails ",this.myJson).subscribe(
       (data:any) =>
       {
       this.libraryService.extractedInformation = data["Info"];

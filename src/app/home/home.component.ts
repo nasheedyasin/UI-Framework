@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.httpClient.get("http://172.23.114.23:5000/api/TemplateLibrary").subscribe(
+    this.httpClient.get("http://127.0.0.1:5000/api/TemplateLibrary").subscribe(
               (data: any) => { 
                   this.libraryService.templateList = data;
             }

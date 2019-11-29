@@ -1,6 +1,6 @@
 <div class="invoiceList" *ngIf="!extractedInformation.extractedData else extractedInfo">
   <ng-template #invoiceTable>
-    <h2>List of the Files Uploaded</h2>
+    <h2>List of the Invoices Uploaded</h2>
     <h3>Template: {{fileNameService.fileType}}</h3>
 
     <br>
@@ -9,7 +9,7 @@
       <table class="files-table mat-elevation-z8" *ngIf="fileList">
         <tr>
             <th mat-header-cell>S.No.</th>
-            <th mat-header-cell>Name of the Files</th> 
+            <th mat-header-cell>Invoice Name</th> 
             <th mat-header-cell>Options Available</th>
         </tr>
         <tr *ngFor="let file of fileList;let i=index">
