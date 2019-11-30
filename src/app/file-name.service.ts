@@ -8,5 +8,6 @@ export class FileNameService {
 
 fileCollection: FileData[]; 
 fileType: string;
+
   constructor() { }
 }

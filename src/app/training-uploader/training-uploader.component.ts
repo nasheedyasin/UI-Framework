@@ -28,6 +28,8 @@ export class TrainingUploaderComponent implements OnInit {
     "FileType":""
   }
 
+  vendorName:string;
+
   fileCollection: FileData[];
 
   constructor(
@@ -44,16 +46,19 @@ export class TrainingUploaderComponent implements OnInit {
       this.fileType = this.fileNameService.fileType;
       this.fileCollection = [];
     }
+
     sendFiles (){ 
       if (this.fileCollection.length === 0) {
         return;
       }
 
+      this.fileNameService.fileType = this.vendorName; 
+
       this.showSpinner = true;
       this.fileType = this.fileNameService.fileType;
       this.myJson = {
         "FileName":this.fileCollection[0].fileName,
-        "FileType":this.fileNameService.fileType
+        "FileType":this.vendorName
       }
       const formData = new FormData();
       

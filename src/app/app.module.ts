@@ -39,6 +39,7 @@ import { MarkedImagesComponent } from './marked-images/marked-images.component';
 import { FilePreViewComponent } from './file-pre-view/file-pre-view.component';
 import { TemplateTilesComponent } from './template-tiles/template-tiles.component';
 import { TemplateDetailsComponent } from './template-details/template-details.component';
+import { SelectDropDownModule } from 'ngx-select-dropdown'
 
 
 @NgModule({
@@ -80,7 +81,8 @@ import { TemplateDetailsComponent } from './template-details/template-details.co
     ImageViewerModule,
     MatDialogModule,
     NgxExtendedPdfViewerModule,
-    ModalModule
+    ModalModule,
+    SelectDropDownModule 
   ],
   providers: [
     {
