@@ -1,7 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { NotificationService } from '../notification.service';
-import { FileNameService } from '../file-name.service';
 
 @Component({
   selector: 'app-stepper',
@@ -17,8 +15,7 @@ export class StepperComponent implements OnInit {
   @Output() stepperHide: EventEmitter<any> = new EventEmitter<any>();
 
   constructor(private _formBuilder: FormBuilder,
-    private notifyService : NotificationService,
-    private fileNameService:FileNameService
+
     ) { }
 
   ngOnInit() {

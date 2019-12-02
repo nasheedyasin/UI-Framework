@@ -3,4 +3,18 @@
     background: #1c2126 ;
 
   }
-  
+  .ngx-dropdown-button {
+    background: #343a40 !important;
+    color: rgb(179, 176, 176) !important;
+    border: transparent !important;
+    border-bottom: 1px solid white !important;
+    width: 200px !important;
+}
+
+.ngx-dropdown-list-container {
+  // color: rgb(179, 176, 176) !important;
+  // background: #343a40 !important;
+
+  width: 800px !important;
+
+}

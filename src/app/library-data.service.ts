@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class LibraryDataService {
 
   fileType : string;
-  templateList : any ;
+  templateList : any = null;
   extractedInformation : any = null ;
   infoVariable : any;
   constructor() { }
