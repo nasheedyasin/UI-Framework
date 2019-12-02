@@ -39,11 +39,17 @@ export class PdfUploaderComponent implements OnInit {
 
   ngOnInit() {
     this.fileCollection = [];
+    this.fileNameService.fileType = "";
 
   }
   sendFiles (){ 
     
     if (this.fileCollection.length === 0) {
+      return;
+    }
+
+    if (!this.fileNameService.fileType) {
+      alert("Please provide the Vendor Name")
       return;
     }
    

@@ -16,15 +16,32 @@
             <td mat-cell>{{i+1}}</td>
             <td mat-cell>{{ file.fileName }}</td>
             <td mat-cell>
-                  <button class="matButton2" mat-flat-button (click)="convertToJpeg(i)" >Extract Info</button>  &nbsp;&nbsp;
+                  <button class="matButton2" mat-flat-button (click)="displayInfo(i)" >Show Info</button>  &nbsp;&nbsp;
             </td>
         </tr>
       </table>
     </div>
     <br>
     <div>
-      <a href="http://localhost:4200/home"><button mat-flat-button class="matButton" (click)="goBack()">Home</button></a>    
+        <a href="http://localhost:4200/home">
+          <button mat-icon-button class="matButton">
+            <mat-icon>
+              home
+            </mat-icon>          
+          </button>
+        </a>
+
+        &nbsp;
+        &nbsp;
+
+        <button mat-raised-button class="extractAll" (click)="batchExtract()">
+            <!-- <mat-icon>
+              home
+            </mat-icon>           -->
+          Extract All
+        </button>
     </div>
+
 
   </ng-template>
 
