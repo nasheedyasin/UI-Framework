@@ -76,19 +76,16 @@ export class UploadListComponent implements OnInit {
         "FileList":this.fileList,
         "FileType":this.fileNameService.fileType
       } 
+
       // IP (Office): 172.23.179.252 / 172.23.115.77
       // IP (Home): 192.168.0.102
-      // this.http.post("http://127.0.0.1:5000/api/ConvertPDFs",this.myJson).subscribe(
-      //   (data: any) => {
-      //     this.displayInfo();
-      //   }
-      // );
-
       this.http.post("http://127.0.0.1:5000/api/InfoExtractor  ",this.myJson).subscribe(
         (data: any) => {
           this.extractedInformation.fileName = data["FileName"];
           this.extractedInformation.b64MarkedImages = data["MarkedImages"];
-          this.extractedInformation.extractedData = data["Info"];      
+          this.extractedInformation.extractedData = data["Info"];  
+          this.invoiceInfoList[data["FileName"]] = {markedImgs:data["MarkedImages"], 
+                                                    extractedData:data["Info"]}; 
           this.showFlag = false;                          
         }
       );
@@ -96,7 +93,7 @@ export class UploadListComponent implements OnInit {
     }
 
     batchExtract(){
-      
+
       this.fileList.forEach(element => {
         this.showFlag = true;
         this.myJson = {
@@ -116,7 +113,7 @@ export class UploadListComponent implements OnInit {
 
       });
 
-
+        
     }
 
 }
